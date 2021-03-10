@@ -53,20 +53,24 @@ h1 {
           justify-content: space-between;
 }
 
-button {
-  padding: 1rem 4rem;
+.button {
+  padding: 1rem 3rem;
   border-radius: 0.8rem;
   margin-bottom: 4vh;
   border: 1px solid #f9953f;
   background-color: transparent;
   color: #f9953f;
-  font-size: 1.5rem;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-button:hover {
+.button a {
+  font-size: 1rem;
+  color: #f9953f;
+}
+
+.button:hover {
   background-color: #f9963f17;
 }
 
@@ -231,10 +235,6 @@ svg {
   text-align: left;
 }
 
-#about div {
-  padding: 3rem;
-}
-
 #about img {
   max-height: 40%;
   width: auto;
@@ -247,6 +247,8 @@ svg {
 
 .resume-button {
   margin-top: 3vh;
+  text-align: center;
+  width: 20%;
 }
 
 #game-dev {
