@@ -1,0 +1,248 @@
+$grey-blue: #3d4c59;
+$grey-blue-light: #526576;
+$grey-blue-lighter: #7d96ac;
+$cream: #f8dcbf;
+$light-cream: #fff7ee;
+$faint-grey: rgb(248, 248, 248);
+$accent-color: #f9953f;
+$accent-color-faded: #f9963f17;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $light-cream;
+  background-color: $grey-blue;
+}
+li {
+  list-style-type: none;
+}
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-shadow {
+  box-shadow: 0 5px 4px 4px rgba(0, 0, 0, 0.185);
+}
+.cream {
+  color: $cream;
+}
+.accent-colour {
+  color: $accent-color;
+}
+.sb {
+  justify-content: space-between;
+}
+
+button {
+  padding: 1rem 4rem;
+  border-radius: 0.8rem;
+  margin-bottom: 4vh;
+  border: 1px solid $accent-color;
+  background-color: transparent;
+  color: $accent-color;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: $accent-color-faded;
+}
+
+//------------HEADER-------------
+header {
+  width: 100%;
+  height: 8vh;
+  .flex {
+    height: 100%;
+    width: 100%;
+  }
+  nav {
+    padding: 0 4rem;
+    font-size: 1.2rem;
+    span {
+      padding: 0.5rem;
+      ::before {
+        content: "<";
+        color: $accent-color;
+      }
+      ::after {
+        content: ">";
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+#nav-email {
+  padding: 0 2rem;
+}
+
+#logo {
+  height: 70%;
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: $light-cream;
+  transition: all 0.3s ease-out;
+}
+.change-color-float-up:hover {
+  color: $accent-color !important;
+  .fill {
+    fill: $accent-color;
+  }
+  .stroke {
+    stroke: $accent-color !important;
+  }
+  svg {
+    transform: translateY(-5px);
+  }
+  transform: translateY(-5px);
+}
+
+//-------SOCIALS---------
+svg {
+  transition: all 0.3s ease-in-out;
+}
+.fill {
+  fill: $grey-blue-lighter;
+}
+.stroke {
+  stroke: $grey-blue-lighter;
+}
+
+#socials {
+  height: 100vh;
+  display: inline-flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 30px;
+
+  svg {
+    padding: 15px;
+  }
+}
+#socials::after {
+  content: "";
+  width: 1px;
+  height: 20vh;
+  background-color: $accent-color;
+  margin: 0px auto;
+}
+
+#email-contact {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+  }
+  ul::before {
+    content: "";
+    width: 1px;
+    height: 20vh;
+    background-color: $accent-color;
+    margin: 0px auto;
+  }
+  li {
+    padding: 10px 0;
+  }
+  a {
+    color: $grey-blue-lighter;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+}
+
+//----------HERO-------
+#about {
+  height: 92vh;
+  width: 60%;
+  margin: auto;
+  text-align: left;
+
+  div {
+    padding: 3rem;
+  }
+  img {
+    max-height: 40%;
+    width: auto;
+  }
+  p {
+    width: 50%;
+    padding: 3vh 0;
+  }
+}
+.resume-button {
+  margin-top: 3vh;
+}
+//-------GAME DEV -------
+#game-dev {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+}
+#game-dev-title {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+
+#hero-img {
+  height: 100%;
+  background: url(./imgs/TSD-bg.png) rgba(0, 0, 0, 0);
+  background-blend-mode: multiply;
+
+  background-size: contain;
+  background-attachment: fixed;
+  width: 20%;
+  img {
+    width: 100%;
+  }
+}
+
+#img-two {
+  width: 20%;
+  background-color: rgb(29, 29, 29);
+  background: url(./imgs/wreckage-bg.JPG) rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: contain;
+  background-position: right;
+  background-attachment: fixed;
+  height: 100%;
+  img {
+    width: 80%;
+  }
+}
+
+#img-three {
+  width: 20%;
+  background-color: rgb(29, 29, 29);
+  background: linear-gradient(180deg, #000000 50%, #ffffff 50%);
+  background-blend-mode: multiply;
+  background-size: auto;
+  height: 100%;
+  img {
+    width: 80%;
+  }
+}
