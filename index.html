@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="app.js"></script> </script>
     <title>Swimming Tuna</title>
 </head>
 <body>
-    <header class="flex">
+    <header class="flex fade-in">
         <div class="flex sb">
             <img id ="logo"  src="./imgs/Logo.png" alt="">
-            <nav>
+
+            <nav id="main-nav" class="visible">
                 <span><a class="change-color-float-up" href="">About</a></span>
                 <span><a class="change-color-float-up" href="">Games</a></span>
                 <span><a class="change-color-float-up" href="">Web</a></span>
                 <span><a class="change-color-float-up"href="">Skills</a></span>
                 <span><a class="change-color-float-up" href="">Contact</a></span>
             </nav>
+        
+            <button id="menu"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));showNav();"
+                aria-label="Main Menu">
+                <svg width="60" height="60" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
         </div>
     </header>
-    <nav >
+    <nav id="socials-nav">
         <ul id="socials">
             <li><a class="change-color-float-up" href="https://www.instagram.com/swimming.tuna/" target="blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 24 24">
@@ -57,30 +71,31 @@
     </div>
     <main>
         <section  class="flex">
-            <div id="about" class="flex">
-                <div>
+            <div id="hero" class="flex fdc">
                     <p class="accent-colour">Hi, my name is</p>
-                    <h1 style="font-size: 8rem;" class="cream">Tuan Vu.</h1>
+                    <h1 class="cream">Tuan Vu.</h1>
                     <p>
                         I'm a software engineer based in Melbourne, Australia specialising in developing awesome games and responsive websites. 
-
-                        <!-- The immersion, the story and the endless possibilities of games has always fascinated me ever since I was young.
-                        <br><br>
-                        Growing up I had a strong interest in art, always drawing in class and doodling at home; this fuelled my interest in the
-                        art of video games. I first started doing level/game design during my teens creating maps, stories and worlds using the
-                        World Editor in 'Warcraft III: Frozen Throne' and from there my academic choices has reflected my dedication to pursue
-                        my passion.
-                        ​<br><br>
-                        Since graduation I have been constantly developing games, expanding my knowledge and improving my portfolio. I tend to
-                        immerse myself in tutorials or read up on game design theories and alike when I have a moment of spare time. I enjoy
-                        creating games with a focus of immersion, but also love to experiment on ideas.
-                        <br><br>
-                        I am a PC gamer who dabbles in a bit of console gaming as well. -->
                     </p>
-                <div class="flex sb"><a class="button resume-button" href="./imgs/Tuan Vu CV.pdf" target="_blank">Résumé</a></div>
-                </div>
-                <!-- <img src="./imgs/Me-small.jpg" alt=""> -->
+                    <a class="button resume-button" href="./imgs/Tuan Vu CV.pdf" target="_blank">Résumé</a>
+              
             </div>
+        </section>
+        <section id="about" class="flex fdc ail">
+            <span class="headings"><h2>About</h2></span>
+            <div class="flex">
+                <p>
+                    Hi!, My name is Tuan and i'm a software engineer based in Melbourne, Australia.
+                    <br><br>
+                    I love to make games and create fun & exicting websites!
+                    <br><br>
+                    Since graduating from RMIT; I have been constantly developing games, expanding my knowledge and improving my portfolio. I enjoy creating games and applications with a focus on immersion, but also love to experiment on ideas.
+                    <br><br>
+                    I am a PC gamer who dabbles in a bit of console gaming as well.
+                </p>
+                <img src="./imgs/Me-small.jpg" alt="">
+            </div>
+            
         </section>
         <!-- <section id="game-dev" class="flex">
             <div id="game-dev-title" class="flex"><h1 >Games</h1></div>
