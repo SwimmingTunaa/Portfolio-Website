@@ -6,6 +6,10 @@
     }
   }
 
+  main {
+    width: 70%;
+  }
+
   #socials-nav {
     display: none !important;
   }
@@ -39,8 +43,7 @@
     display: none !important;
   }
 
-  #about {
-    width: 80% !important;
+  #hero {
     p {
       width: 80% !important;
       padding: 3vh 0;

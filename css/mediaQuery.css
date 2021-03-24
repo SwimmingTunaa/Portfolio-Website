@@ -8,6 +8,9 @@
   nav a {
     font-size: 2rem;
   }
+  main {
+    width: 70%;
+  }
   #socials-nav {
     display: none !important;
   }
@@ -50,14 +53,11 @@
   #email-contact {
     display: none !important;
   }
-  #about {
-    width: 80% !important;
-  }
-  #about p {
+  #hero p {
     width: 80% !important;
     padding: 3vh 0;
   }
-  #about h1 {
+  #hero h1 {
     font-size: 3rem !important;
   }
 }
