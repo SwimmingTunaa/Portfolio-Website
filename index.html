@@ -8,19 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
-    <script src="app.js"></script> </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
     <title>Swimming Tuna</title>
 </head>
-<body>
+<body >
     <header class="flex fade-in">
         <div class="flex sb">
             <img id ="logo"  src="./imgs/Logo.png" alt="">
 
             <nav id="main-nav" class="visible">
-                <span><a class="change-color-float-up" href="">About</a></span>
-                <span><a class="change-color-float-up" href="">Games</a></span>
-                <span><a class="change-color-float-up" href="">Web</a></span>
-                <span><a class="change-color-float-up"href="">Skills</a></span>
+                <span><a class="change-color-float-up" href="#about">About</a></span>
+                <span><a class="change-color-float-up" href="">Portfolio</a></span>
                 <span><a class="change-color-float-up" href="">Contact</a></span>
             </nav>
         
@@ -69,34 +68,115 @@
             <li><a class="change-color-float-up" href="mailto:tuanvu@live.com.au">tuanvu@live.com.au</a></li>
         </ul>
     </div>
-    <main>
-        <section  class="flex">
-            <div id="hero" class="flex fdc">
-                    <p class="accent-colour">Hi, my name is</p>
-                    <h1 class="cream">Tuan Vu.</h1>
-                    <p>
-                        I'm a software engineer based in Melbourne, Australia specialising in developing awesome games and responsive websites. 
-                    </p>
-                    <a class="button resume-button" href="./imgs/Tuan Vu CV.pdf" target="_blank">Résumé</a>
-              
+    <main >
+        <section  id="parallax" class="flex" style="height: 100vh;">
+            <div >
+                <div id="hero" class="flex fdc">
+                        <p class="accent-colour" id="greeting">Hi, my name is</p>
+                        <h1 id="name"  class="cream" style="transition: all 0.8s ease;">Tuan Vu.</h1>
+                        <p id="description">
+                            I'm a software engineer based in Melbourne, Australia specialising in developing awesome games and responsive websites. 
+                        </p>
+                        <a class="button resume-button" href="./imgs/Tuan Vu CV.pdf" target="_blank" style="transition: transform 0.8s ease;">Résumé</a>
+                </div>
             </div>
         </section>
         <section id="about" class="flex fdc ail">
             <span class="headings"><h2>About</h2></span>
             <div class="flex">
-                <p>
-                    Hi!, My name is Tuan and i'm a software engineer based in Melbourne, Australia.
-                    <br><br>
-                    I love to make games and create fun & exicting websites!
-                    <br><br>
-                    Since graduating from RMIT; I have been constantly developing games, expanding my knowledge and improving my portfolio. I enjoy creating games and applications with a focus on immersion, but also love to experiment on ideas.
-                    <br><br>
-                    I am a PC gamer who dabbles in a bit of console gaming as well.
-                </p>
-                <img src="./imgs/Me-small.jpg" alt="">
+                <div class="flex fdc">
+                    <article>
+                        <p class="hide">
+                            Hi!, My name is Tuan and I'm a software engineer with a design background based in Melbourne, Australia.
+                            <br><br>
+                            I love to make games and create fun & exicting websites!
+                            <br><br>
+                        </p>
+                        <p>Since graduating from <a href="https://www.rmit.edu.au/" class="accent-colour change-color-float-up">RMIT</a>; I have been constantly developing games, expanding my knowledge and improving my portfolio. I enjoy creating games and applications with a focus on immersion, but also love to experiment on ideas.</p>
+                     
+                        <p class="hide"><br>I am a PC gamer who dabbles in a bit of console gaming as well.</p>
+                    </article>
+                    <div id="skills" class="flex fdc">
+                        <p class="cream">Here is some stuff that I have worked with recently:</p>
+                        <div class="flex sb">
+                            <ul class="skills-list">
+                                <li>Unity 2D/3D</li>
+                                <li>C#</li>
+                                <li>React</li>
+                            </ul>
+                            <ul class="skills-list">
+                                <li>HTML</li>
+                                <li>CSS/SCSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%; align-self:flex-start;">
+                    <img src="./imgs/Me-small.jpg" alt="">
+                </div>
             </div>
-            
+            <div class="line">
+            </div>
         </section>
+
+        <section id="portfolio" class="flex fdc acsb" style="margin-top: 1em">
+            <span class="headings">
+                <h2>Portfolio</h2>
+            </span>
+            <div class="flex project">
+                <a href="" class="overlay p-image">
+                    <img src="./imgs/TSD-banner.png" alt="The Shortest Run">
+                </a>
+                <div class="p-content text-right">
+                    <p class="accent-colour p-type">Featured Game</p>
+                    <h3 class="cream">The Shortest Run</h3>
+                    <p class="p-description overlap-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt nam quia exercitationem! Voluptates, in laudantium? Enim, eius tempore labore qui perferendis ad, dolore consectetur laborum magnam odit voluptatibus dicta reprehenderit!</p>
+                    <div class="tools">
+                        <span>Unity 2D</span>
+                        <span>C#</span>
+                        <span class="end">Photoshop</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex project">
+                <div class="p-content text-left">
+                    <p class="accent-colour p-type">Featured Game</p>
+                    <h3 class="cream">Wreckage</h3>
+                    <p class="p-description overlap-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt nam quia
+                        exercitationem! Voluptates, in laudantium? Enim, eius tempore labore qui perferendis ad, dolore consectetur
+                        laborum magnam odit voluptatibus dicta reprehenderit!</p>
+                    <div class="tools">
+                        <span>Unity 3D</span>
+                        <span>C#</span>
+                        <span>3Ds Max</span>
+                        <span class="end">Photoshop</span>
+                    </div>
+                </div>
+                <a href="" class="overlay p-image">
+                    <img src="./imgs/wreckage-bg.JPG" alt="The Shortest Run">
+                </a>
+            </div>
+                        <div class="flex project">
+                            <a href="" class="overlay p-image">
+                                <img src="./imgs/bw-title.JPG" alt="The Shortest Run">
+                            </a>
+                            <div class="p-content text-right">
+                                <p class="accent-colour p-type">Featured Game</p>
+                                <h3 class="cream">BlackWhite</h3>
+                                <p class="p-description overlap-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt nam
+                                    quia exercitationem! Voluptates, in laudantium? Enim, eius tempore labore qui perferendis ad, dolore
+                                    consectetur laborum magnam odit voluptatibus dicta reprehenderit!</p>
+                                <div class="tools">
+                                    <span>Unity 3D</span>
+                                    <span>C#</span>
+                                    <span>3Ds Max</span>
+                                    <span class="end">Photoshop</span>
+                                </div>
+                            </div>
+                        </div>
+        </section>
+      
         <!-- <section id="game-dev" class="flex">
             <div id="game-dev-title" class="flex"><h1 >Games</h1></div>
             <div id="hero-img" class="flex"><img src="./imgs/TSD-logo.png" alt=""></div>
@@ -113,4 +193,6 @@
         </section> -->
     </main>
 </body>
+    <script src="app.js"></script>
+
 </html>
