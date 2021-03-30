@@ -515,8 +515,21 @@ svg {
 }
 
 .resume-button {
-  margin-top: 3vh;
+  color: #a2bacf;
+  border: 2px solid #f9953f;
+  text-orientation: mixed;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   text-align: center;
+  padding: 1.2rem 0.6rem;
+  border-radius: 0.8rem;
+  margin-bottom: 2vh;
+}
+
+.resume-button:hover {
+  background-color: #f9963f17;
+  border-color: #f9953f;
 }
 
 #about {
@@ -690,5 +703,18 @@ svg {
 
 .tools .end {
   padding-right: 0;
+}
+
+#contact {
+  height: 100vh;
+}
+
+#contact p {
+  text-align: center;
+}
+
+#contact .button {
+  margin: 2em;
+  font-size: 2em;
 }
 /*# sourceMappingURL=style.css.map */
